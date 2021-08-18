@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>คำใบ้01</title>
+    <style>
+        *{
+            font-family: 'Kanit', sans-serif;
+            margin:0;
+            padding:0;
+        }
+        .hero{
+            color:rgb(255, 196, 70);
+            font-weight: 700;
+            font-size:50px;
+        }
+        .hero2{
+            color:black;
+            font-weight: 700;
+            font-size:50px;
+        }
+        .hero3{
+            color:rgb(255, 196, 70);
+            font-weight: 700;
+            font-size:50px;
+        }
+        .hero4{
+            color:black;
+            font-weight: 700;
+            font-size:50px;
+        }
+        .hero5{
+            color:rgb(255, 196, 70);
+            font-weight: 700;
+            font-size:50px;
+        }
+        progress{
+            background: transparent;
+            color:red;
+            width:100%;
+        }
+        progress[value]::-webkit-progress-bar {
+  background-color: black;
+}
+        progress::-moz-progress-bar { background: rgb(255, 190, 70); }
+        progress::-webkit-progress-value { background: rgb(255, 190, 70); }
+    </style>
+</head>
+<body>
+    
+<div class="square" style="width:100vw;height:100vh;background-color: black;">
+
+    <div class="hero w3-center">สวัสดี</div>
+
+</div>
+
+
+
+<div class="square" style="width:100vw;height:100vh;background-color: rgb(255, 196, 70);"><div class="hero2 w3-center">น้องพี่</div></div>
+
+<div class="square" style="width:100vw;height:100vh;background-color: black;"><div class="hero3 w3-center">รอบนี้พี่จะมาใบ้</div></div>
+<div class="square" style="width:100vw;height:100vh;background-color: rgb(255, 196, 70);"><div class="hero4 w3-center">ว่า</div></div>
+<div class="square" style="width:100vw;height:200vh;background-color: black;"><div class="hero5 w3-center">o(〃＾▽＾〃)o<br><br>01<br>พี่เป็นท๊อปห้อง<br><br>ถ้าอยากได้คำใบ้ชิ้นต่อไปก็เขียนโพสแนะนำตัวเองในวันพรุ่งนี้"นะจ้ะ"</div></div>
+<!-- ฮันแน่ ฉลาดดีนี่ เอาไปอีกคำใบ้ พี่เป็นเด็กSCG XD -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+<script>
+
+gsap.registerPlugin("ScrollTrigger")
+
+
+
+gsap.to(".hero", {
+  scrollTrigger: {
+    trigger: ".hero",
+    scrub: 1,
+    pin: true,
+    start: "center center",
+    end: "bottom -40%",
+  },
+  rotation: 484,
+});
+
+gsap.to(".hero2", {
+  scrollTrigger: {
+    trigger: ".hero2",
+    scrub: 1,
+    pin: true,
+    start: "center center",
+    end: "bottom -30%",
+  },
+  scale:3
+});
+gsap.to(".hero3", {
+  scrollTrigger: {
+    trigger: ".hero3",
+    scrub: 1,
+    pin: true,
+    start: "center center",
+    end: "bottom -40%",
+  }
+});
+gsap.to(".hero4", {
+  scrollTrigger: {
+    trigger: ".hero4",
+    scrub: 1,
+    pin: true,
+    start: "center center",
+    end: "bottom -40%",
+  }
+});
+gsap.to(".hero5", {
+  scrollTrigger: {
+    trigger: ".hero5",
+    scrub: 1,
+    pin: true,
+    start: "center center",
+    end: "bottom -40%",
+  }
+});
+
+
+</script>
+</body>
+</html>
